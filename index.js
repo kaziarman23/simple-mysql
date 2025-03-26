@@ -3,18 +3,22 @@ const cors = require("cors");
 const dotenv = require("dotenv").config();
 const app = express();
 const port = process.env.PORT;
-const db = require("./src/Configs/DB.Config");
+
+// Database Import
+require("./src/Configs/DB.Config")
 
 // Router Paths
 const HomeRoute = require("./src/Routers/Home.Route");
+const UserRoute = require("./src/Routers/User.Route");
 
 // Middlewares
 app.use(cors());
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 // Routes
 app.use("/", HomeRoute);
-
+app.use("/user", UserRoute);
 
 // Server Listen
 app.listen(port, () => {

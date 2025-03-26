@@ -1,11 +1,17 @@
 {
   "name": "simple-mysql",
   "version": "1.0.0",
-  "description": "This project is for mysql database.",
+  "description": "Node.js Restful CRUD API with Node.js, Express and MySQL",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon index.js"
   },
+  "keywords": [
+    "nodejs",
+    "express",
+    "mysql",
+    "restapi"
+  ],
   "author": "Kazi Arman",
   "license": "ISC",
   "dependencies": {
