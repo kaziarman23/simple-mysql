@@ -9,7 +9,7 @@ This README contains essential MySQL commands to help you navigate and manage yo
 To log in to MySQL, open your terminal and run:
 
 ```bash
-mysql -u root -p
+sudo mysql -u root -p
 ```
 
 After running the command, you will be prompted to enter the MySQL password for the `root` user.
